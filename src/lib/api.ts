@@ -1,6 +1,8 @@
 // src/lib/api.ts
-const API_BASE_URL =
-  import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
+// TODO: later we can restore the env-based config;
+// for now, hard-code the Azure backend so the live site works.
+const API_BASE_URL = "https://trainstream-backend-f3c6f0f8g8ftfkgy.uksouth-01.azurewebsites.net";
+
 
 async function request<T>(
   path: string,
